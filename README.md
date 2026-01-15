@@ -3,90 +3,31 @@
 A **production-grade e-commerce application** built with a modern **MERN stack**, focused on **scalability, security, and real-world payment flows**. This project covers everything from authentication and caching to Stripe payments, admin analytics, and a polished UI.
 
 ---
-
 ## 🚀 Features Overview
 
-### 🔧 Project & Infrastructure
+| 🔧 Infrastructure & Auth | 🗄️ Database & Caching |
+| :--- | :--- |
+| **Backend:** Express.js Scalable Architecture | **Primary DB:** MongoDB + Mongoose ODM |
+| **Security:** JWT (Access & Refresh Tokens) | **Speed:** Redis (ioredis) for Product Caching |
+| **Encryption:** Password hashing via Bcryptjs | **Storage:** Cloudinary API for Media |
+| **Middleware:** Cookie-based protected routes | **Tasks:** Environment-based (dotenv) config |
 
-* Express-based backend architecture
-* Environment-based configuration with **dotenv**
-* Modular & scalable folder structure
-* Hot-reload during development using **nodemon**
+| 🛒 E-Commerce Core | 💳 Payments & Sales |
+| :--- | :--- |
+| **Catalog:** Product & Category Management | **Gateways:** Secure Stripe Checkout Flow |
+| **Shopping:** Zustand-powered persistent cart | **Promotions:** Dynamic Coupon/Discount System |
+| **UX:** Toast notifications & Framer Motion | **Feedback:** Success & Failure handling |
+| **Orders:** Seamless transition from cart to buy | **Analytics:** Real-time revenue insights |
 
-### 🗄️ Database & Caching
-
-* **MongoDB** with Mongoose ODM
-* **Redis** caching using **ioredis** for:
-
-  * Faster product fetches
-  * Session & frequently accessed data
-
-### 🔐 Authentication & Security
-
-* Secure authentication system
-* Password hashing with **bcryptjs**
-* **JWT Authentication**
-
-  * Access Tokens
-  * Refresh Tokens
-* Cookie-based token storage
-* Protected routes (User & Admin)
-
-### 💳 Payments
-
-* **Stripe** integration
-* Secure checkout flow
-* Payment success & failure handling
-* Coupon / discount code system
-
-### 🛒 E-Commerce Core
-
-* Product & Category Management
-* Shopping Cart functionality
-* Checkout flow with Stripe
-* Order creation & tracking
-
-### 👑 Admin Dashboard
-
-* Create Product
-* View All Products
-* Sales Analytics
-* Revenue & order insights (charts)
-
-### 🎨 Frontend & UI
-
-* **React 19**
-* **Tailwind CSS** for responsive design
-* **Framer Motion** for animations
-* **Recharts** for analytics
-* **Zustand** for global state management
-* Toast notifications for UX feedback
+| 🎨 Frontend & Design | 👑 Admin Suite |
+| :--- | :--- |
+| **Framework:** React 19 (Latest) | **Inventory:** Full CRUD (Create/Edit/Delete) |
+| **Styling:** Tailwind CSS (Responsive Design) | **Intelligence:** Recharts for sales graphs |
+| **State:** Zustand Global Stores | **UI:** Dashboard with 3-column navigation |
+| **Animations:** Framer Motion Transitions | **Access:** Dedicated Admin-only routes |
 
 ---
 
-## 🧰 Tech Stack
-
-### Backend
-
-* **Node.js**
-* **Express.js**
-* **MongoDB + Mongoose**
-* **Redis (ioredis)**
-* **JWT**
-* **Stripe**
-* **Cloudinary** (image uploads)
-
-### Frontend
-
-* **React(vite)**
-* **React-Router**
-* **Axios**
-* **Lucide-react**
-* **framer-motion**
-* **Recharts**
-* **zustand**
-
----
 ## 📸 Application Pages & Layouts
 
 ### 🏠 Home Page
@@ -144,6 +85,34 @@ Manage products and upload media via **Cloudinary**.
 | Create Product Form | All Products Management |
 | :---: | :---: |
 | ![Create Product](./assets/admin_create_product.png) | ![Product List](./assets/admin_products.png) |
+
+## 🧰 Tech Stack
+
+### 🖥️ Frontend (Client-Side)
+| Technology | Usage & Purpose |
+| :--- | :--- |
+| **React 19 (Vite)** | Modern UI development with high performance |
+| **Zustand** | Lightweight, atomic global state management |
+| **Tailwind CSS** | Utility-first styling for responsive design |
+| **Framer Motion** | Smooth interactive animations and transitions |
+| **Recharts** | Data visualization for sales and analytics |
+| **React-Router** | Client-side routing and navigation |
+| **Axios** | Efficient API requests and interceptors |
+| **Lucide-react** | Clean, consistent iconography |
+
+---
+
+### ⚙️ Backend (Server-Side)
+| Technology | Usage & Purpose |
+| :--- | :--- |
+| **Node.js** | High-performance JavaScript runtime |
+| **Express.js** | Minimalist web framework for RESTful APIs |
+| **MongoDB + Mongoose** | Scalable NoSQL database with schema modeling |
+| **Redis (ioredis)** | High-speed caching layer for optimized performance |
+| **JWT** | Secure authentication with Access & Refresh tokens |
+| **Stripe** | Industry-standard secure payment processing |
+| **Cloudinary** | Cloud-based media management and image uploads |
+| **Bcryptjs** | Advanced password hashing and encryption |
 
 ## 🔒 Security Highlights
 
@@ -207,4 +176,4 @@ This project is designed to **mirror real-world production systems** and is perf
 * Learning full-stack development
 * Understanding scalable backend design
 
-If you like this project, ⭐ star
+If you like this project, give a star ⭐ to my repo 
